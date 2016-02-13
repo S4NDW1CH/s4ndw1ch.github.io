@@ -5,22 +5,82 @@
 
 	<meta charset="utf-8">
 
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+
 	<style type="text/css">
 		body {
 			background-color: #4d6c98;
 		}
 
-		img {
+		@keyframes rotate {
+			0% {transform: rotate(0);}
+			100% {transform: rotate(360deg);}
+		}
+
+		.sandwich {
 			position: fixed;
 			top: 40%;
 			left: 40%;
 			width: 20%;
+
+			animation-name: rotate;
+			animation-duration: 5s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+		}
+
+		.media {
+			z-index: 1;
+			
+			position: fixed;
+			width: 100%;
+			height: 32px;
+			bottom: 5px;
+			left: 0;
+		}
+
+		.media_content {
+			display: inline-block;
+			padding-left: 5px;
+			padding-bottom: 5px;
+			opacity: 0.6;
+		}
+
+		.media_content:hover {
+			opacity: 1;
+		}
+
+		.footer {
+			z-index: -1;
+
+			position: fixed;
+			bottom: 0;
+			width: 100%;
+			align-self: center;
+			text-align: center;
+
+			color: #333333;
+			font-family: Tahoma;
+			font-variant: small-caps;
+			font-size: 0.6em;
 		}
 	</style>
 </head>
 <body>
-	<div class="sandwich">
-		<img src="sandwich.png">
+	<img class="sandwich" src="sandwich.png">
+
+	<div class="media">
+		<div class="media_content">
+			<a href="https://github.com/S4NDW1CH"><img title="Me on GitHub!" src="GitHub-Mark-32px.png"></a>
+		</div>
+		<div class="media_content">
+			<a href="steamcommunity.com/id/s4ndw1ch_/"><img title="Me on Steam!" src="Steam-Mark-32px.png"></a>
+		</div>
+		<div class="footer">
+			Hi! <br>
+			GitHub logo is property of GitHub. <br>
+			Steam logo is property of Valve and made by <a href="http://www.flaticon.com/authors/icomoon">Icomoon</a> on <a href="http://www.flaticon.com">Flaticon</a>.
+		</div>
 	</div>
 </body>
 </html>
