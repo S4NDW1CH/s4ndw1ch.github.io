@@ -1,0 +1,34 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3313054, 2016-11-24T15:56:51-0500
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: BigNoodleTooOblique by Sentinel Type
+ * URL: http://www.myfonts.com/fonts/sentinel/big-noodle-too/oblique/
+ *
+ * Webfont: BigNoodleToo by Sentinel Type
+ * URL: http://www.myfonts.com/fonts/sentinel/big-noodle-too/regular/
+ *
+ *
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3313054
+ * Licensed pageviews: 20,000
+ * Webfonts copyright: Copyright (c) James Arboghast/Sentinel Type, 2014. All rights reserved. Published 2014 by S E N T I N E L  T Y P E. This font is authorized for use by Sentinel Type licensees of Blizzard Entertainment Inc, only &amp; may not be copied or distributed.
+ *
+ * © 2016 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+/*@import url("//hello.myfonts.net/count/328d9e");*/
+
+
+@font-face {font-family: 'BigNoodleTooOblique';src: url('big_noodle_too_oblique.eot');src: url('big_noodle_too_oblique.eot?#iefix') format('embedded-opentype'),url('big_noodle_too_oblique.woff2') format('woff2'),url('big_noodle_too_oblique.woff') format('woff'),url('big_noodle_too_oblique.ttf') format('truetype');}
+
+
+@font-face {font-family: 'BigNoodleToo';src: url('big_noodle_too.eot');src: url('big_noodle_too.eot?#iefix') format('embedded-opentype'),url('big_noodle_too.woff2') format('woff2'),url('big_noodle_too.woff') format('woff'),url('big_noodle_too.ttf') format('truetype');}
+

@@ -3,9 +3,12 @@
 	100% {transform: rotate(360deg);}
 }
 
+main {
+	flex-flow: column;
+}
+
 img.sandwich {
 	position: static;
-	display: flex;
 
 	top: 0;
 	bottom: 0;
@@ -16,7 +19,9 @@ img.sandwich {
 	margin-top: auto;
 	margin-bottom: auto;
 
-	height: 55%;
+	width: 20%;
+	height: auto;
+	float: right;
 
 	animation-name: rotate;
 	animation-duration: 5s;
@@ -27,16 +32,21 @@ img.sandwich {
 div.sandwich {
 	position: static;
 	display: flex;
-	flex: 0 1 auto;
-	height: 60%;
+	flex: 1.5 1 auto;
 	margin-bottom: 0;
+
+	overflow: hidden;
+	width: 100%;
+	height: auto;
 
 	justify-content: center;
 	align-items: center;
 }
 
 .cool_stuff {
-	flex: 1 0 auto;
+	flex: 1 1 auto;
+	display: flex;
+	flex-flow: column;
 }
 
 .media {
@@ -47,6 +57,7 @@ div.sandwich {
 	height: 64px;
 	flex-flow: row;
 	justify-content: center;
+	align-items: center;
 }
 
 .media_content {
@@ -63,4 +74,13 @@ div.sandwich {
 
 .media_content:hover {
 	opacity: 1;
+}
+
+.media_content_descriptions {
+	flex: 1 1 auto;
+	height: 100%;
+}
+
+.media_content_description {
+	opacity: 0.2;
 }
