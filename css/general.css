@@ -1,7 +1,10 @@
-/*@import url("fonts/fonts.css");*/
+@keyframes rotate {
+	0% {transform: rotate(0);}
+	100% {transform: rotate(360deg);}
+}
 
 html, body {
-	background-color: #4d6c98;
+	background-color: #D8C9BF;
 	display: flex;
 	flex-flow: column;
 	flex-wrap: nowrap;
@@ -12,25 +15,16 @@ html, body {
 }
 
 header {
-	flex: 0 0 auto;
 	min-height: 50px;
-
-	background-image: linear-gradient(to bottom, rgba(60,84,119,1) 0%,rgba(0,0,0,0) 100%);
-}
-
-#site_name {
-	font-family: 'BigNoodleTooOblique', Tahoma;
-	font-size: 1.8em;
-	letter-spacing: 2px;
-	font-style: normal;
-	font-variant: normal;
-}
-
-#site_name:hover {
-	color: #DD2222;
+	max-height: 50px;
+	display: flex;
+	flex: 0 0 auto;
+	justify-content: center;
 }
 
 .header_button {
+	flex: 0 0 auto;
+
 	padding: 0px 15px;
 	display: inline-flex;
 	justify-content: center;
@@ -38,26 +32,148 @@ header {
 	height: 100%;
 	transition-duration: .5s;
 
-	border-right: 2px solid #3c5477;
 	margin-left: 0px;
+	margin-right: 0px;
 
-	color: #CCC;
-	font-family: Tahoma;
-	font-variant: small-caps;
-	font-variant: all-small-caps;
-	font-size: 1.2em;
+	font-family: "Roboto Mono",monospace;
+	font-size: 1.8em;
+	font-weight: 300;
+
+	letter-spacing: 2px;
 
 	text-decoration: none;
 }
 
 .header_button:hover {
-	background-color: #3c5477;
+	background-color: #BBA190;
+}
+
+#sandwich_box {
+	display: inline-flex;
+	border: 3px solid #EEE;
+	border-radius: 50%;
+	background-color: #4d6c98;
+	height: 35px;
+	width: 35px;
+	margin-right: 5px;
+}
+
+#sandwich {
+	position: static;
+
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+
+	width: 80%;
+	height: auto;
+	float: right;
+
+	animation-name: rotate;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
 }
 
 main {
 	flex: 2 0 auto;
+
 	display: flex;
 	flex-flow: row;
+
+	justify-content: center;
+	align-items: center;
+
+	width: auto;
+	margin: 5% 0;
+	padding: 0 50px;
+}
+
+.flex_box {
+	display: flex;
+	/*width: 0;*/
+	flex: 1 1 100%;
+	position: relative;
+	margin: 0;
+	margin-bottom: auto;
+}
+
+.vertical {
+	flex-flow: column;
+}
+
+.horrizontal {
+	flex-flow: row;
+}
+
+.container_box {
+	padding: 5px 10px;
+	padding-top: calc(1.3em/2 + 5px);
+	margin: 15px 50px;
+	border: 1px solid #333;
+
+	position: relative;
+}
+
+.container_box_header {
+	flex: 0 0 auto;
+
+	position: absolute;
+
+	background-color: #D8C9BF;
+	padding: 0 5px;
+	margin: 0;
+
+	transform: translateY(calc(-50% - 1.3em/2 - 5px));
+	left: 5px;
+
+	font-size: 1.2em;
+	font-family: "Roboto Mono", monospace;
+
+	display: inline;
+	display: inline-block;
+	display: -moz-inline-stack;
+
+	color: #333;
+	font-weight: 600;
+}
+
+.container_box_item {
+	width: auto;
+	flex: 0 0 100%;
+
+	display: block;
+
+	margin: 0;
+	padding: 2px;
+
+	color: #333;
+	font-weight: 200;
+	font-family: "Roboto Mono", monospace;
+	font-size: 1.2em;
+
+	text-align: justify;
+}
+
+a.container_box_item {
+	text-align: left;
+	text-decoration: none;
+}
+
+a:visited, a:link {
+	color: #333;
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	background-color: #BBA190
+	transition-duration: .5s;
+	text-decoration: underline;
 }
 
 footer {
@@ -69,8 +185,7 @@ footer {
 
 	text-align: center;
 	color: #282828;
-	font-family: Tahoma;
-	font-variant: small-caps;	 /*For shitty browsers*/
-	font-variant: all-small-caps;	/* For Firefox */
-	font-size: .7em;
+	font-family: "Roboto Mono", monospace;
+	font-variant: small-caps;
+	font-size: .8em;
 }
