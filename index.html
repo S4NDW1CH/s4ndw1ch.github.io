@@ -6,6 +6,9 @@
 	<meta charset="utf-8">
 
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
+
+	<link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Roboto+Mono|Source+Code+Pro" rel="stylesheet">
+
 	<link rel="stylesheet" type="text/css" href="fonts/fonts.css">
 	<link rel="stylesheet" type="text/css" href="css/general.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
@@ -16,31 +19,43 @@
 <body>
 
 	<header>
-		<div class="header_button" id="site_name">S4NDW1CH_</div>
+		<a href="index.html" class="header_button" id="site_name"><div id="sandwich_box"><img src="sandwich.png" id="sandwich"></div>S4NDW1CH_</a>
 	</header>
 
 	<main>
-		<div class="sandwich">
-			<img class="sandwich" src="sandwich.png">
+		<div id="left_column" class="flex_box vertical">
+			<div class="container_box flex_box vertical">
+				<p class="container_box_header">about me</p>
+				<p class="container_box_item">
+					Hello! You found this piece of crap website I made for myself that perfectly reflects me. This site is garbage and so am I.
+					<br><br>
+					Also I code a bit. You can find my works in "my stuff" category. I have no idea why you would want to look at my crappy works, but whatever floats your boat.
+					<br><br>
+					I also like to waste my time <s>thinking about suicide</s> playing videogames. I totally suck at them. You can check out exactly how much I suck at them in "social" category.
+					<br><br>
+					Anyway, sorry I made you waste time looking at this crap.
+				</p>
+			</div>
 		</div>
 
-		<div class="cool_stuff">
-			<span class="media">
-				<div id="github" class="media_content">
-					<a href="https://github.com/S4NDW1CH"><img class="media_content_image" title="Me on GitHub!" src="GitHub-Mark-120px-plus.png"></a>
-				</div>
+		<div id="right_column" class="flex_box vertical">
+			<div class="container_box flex_box vertical">
+				<p class="container_box_header">my stuff</p>
+				<a href="" class="container_box_item">showcase (not done yet)</a>
+			</div>
 
-				<div id="steam" class="media_content">
-					<a href="https://steamcommunity.com/id/s4ndw1ch_/"><img class="media_content_image" title="Me on Steam!" src="Steam-Mark-120px-plus.png"></a>
-				</div>
-			</span>
+			<div class="container_box flex_box vertical">
+				<p class="container_box_header">social</p>
+				<a href="https://github.com/S4NDW1CH" class="container_box_item">github</a>
+				<a href="https://gitlab.com/S4NDW1CH" class="container_box_item">gitlab</a>
+				<a href="http://steamcommunity.com/id/s4ndw1ch_" class="container_box_item">steam</a>
+			</div>
 		</div>
 	</main>
 
 	<footer>
-		Hi! <br>
-		GitHub logo is property of GitHub. <br>
-		Steam logo is property of Valve and made by <a href="http://www.flaticon.com/authors/icomoon">Icomoon</a> on <a href="http://www.flaticon.com">Flaticon</a>.
+		All code and markup is distributed under GNU GPL v2 <br>
+		Made by some dude with barely any coding skills that goes by as <a href="index.html">S4NDW1CH_</a>
 	</footer>
 </body>
 </html>
