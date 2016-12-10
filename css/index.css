@@ -1,13 +1,7 @@
-main {
-	flex-flow: row;
+.flex_box {
+	margin-bottom: auto;
 }
 
 .container_box {
 	margin-bottom: auto;
-}
-
-#right_column .container_box {
-	margin-left: auto;
-	margin-right: auto;
-	min-width: 35%;
 }
