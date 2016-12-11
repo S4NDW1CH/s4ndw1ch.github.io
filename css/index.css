@@ -1,21 +1,7 @@
-<<<<<<< HEAD
 .flex_box {
 	margin-bottom: auto;
-=======
-main {
-	flex-flow: row;
->>>>>>> a86edebfee66a1427ac8786fe3dc05c5a47296fa
 }
 
 .container_box {
 	margin-bottom: auto;
-<<<<<<< HEAD
-=======
-}
-
-#right_column .container_box {
-	margin-left: auto;
-	margin-right: auto;
-	min-width: 35%;
->>>>>>> a86edebfee66a1427ac8786fe3dc05c5a47296fa
 }
