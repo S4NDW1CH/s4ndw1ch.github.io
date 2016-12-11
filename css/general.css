@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @media screen and (max-width: 800px) {
 	main {
 		padding: 0;
@@ -31,6 +32,8 @@
 	}
 }
 
+=======
+>>>>>>> a86edebfee66a1427ac8786fe3dc05c5a47296fa
 @keyframes rotate {
 	0% {transform: rotate(0);}
 	100% {transform: rotate(360deg);}
@@ -117,19 +120,35 @@ main {
 	flex: 2 0 auto;
 
 	display: flex;
+<<<<<<< HEAD
+=======
+	flex-flow: row;
+>>>>>>> a86edebfee66a1427ac8786fe3dc05c5a47296fa
 
 	justify-content: center;
 	align-items: center;
 
 	width: auto;
 	margin: 5% 0;
+<<<<<<< HEAD
+=======
+	padding: 0 50px;
+>>>>>>> a86edebfee66a1427ac8786fe3dc05c5a47296fa
 }
 
 .flex_box {
 	display: flex;
+<<<<<<< HEAD
 	flex: 1 1;
 	position: relative;
 	margin: 0;
+=======
+	/*width: 0;*/
+	flex: 1 1 100%;
+	position: relative;
+	margin: 0;
+	margin-bottom: auto;
+>>>>>>> a86edebfee66a1427ac8786fe3dc05c5a47296fa
 }
 
 .vertical {
@@ -143,15 +162,23 @@ main {
 .container_box {
 	padding: 5px 10px;
 	padding-top: calc(1.3em/2 + 5px);
+<<<<<<< HEAD
 	margin-bottom: auto;
 	height: auto;
+=======
+	margin: 15px 50px;
+>>>>>>> a86edebfee66a1427ac8786fe3dc05c5a47296fa
 	border: 1px solid #333;
 
 	position: relative;
 }
 
 .container_box_header {
+<<<<<<< HEAD
 	flex: 0 0;
+=======
+	flex: 0 0 auto;
+>>>>>>> a86edebfee66a1427ac8786fe3dc05c5a47296fa
 
 	position: absolute;
 
@@ -162,7 +189,11 @@ main {
 	transform: translateY(calc(-50% - 1.3em/2 - 5px));
 	left: 5px;
 
+<<<<<<< HEAD
 	font-size: 1em;
+=======
+	font-size: 1.2em;
+>>>>>>> a86edebfee66a1427ac8786fe3dc05c5a47296fa
 	font-family: "Roboto Mono", monospace;
 
 	display: inline;
@@ -175,7 +206,11 @@ main {
 
 .container_box_item {
 	width: auto;
+<<<<<<< HEAD
 	flex: 0 0;
+=======
+	flex: 0 0 100%;
+>>>>>>> a86edebfee66a1427ac8786fe3dc05c5a47296fa
 
 	display: block;
 
@@ -185,7 +220,11 @@ main {
 	color: #333;
 	font-weight: 200;
 	font-family: "Roboto Mono", monospace;
+<<<<<<< HEAD
 	font-size: 1em;
+=======
+	font-size: 1.2em;
+>>>>>>> a86edebfee66a1427ac8786fe3dc05c5a47296fa
 
 	text-align: justify;
 }
