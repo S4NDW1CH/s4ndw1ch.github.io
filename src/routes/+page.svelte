@@ -36,8 +36,8 @@
 		Coming soon
 	</p>
 	<div id="links">
-		<a href="https://github.com/S4NDW1CH"><img src={github_logo} alt="My GitHub profile" style="height: 60%; margin: auto"></a>
-		<a href="https://gitlab.com/S4NDW1CH_"><img src={gitlab_logo} alt="My GitLab profile"></a>
+		<a href="https://github.com/S4NDW1CH" target="_blank"><img src={github_logo} alt="My GitHub profile" style="height: 60%; margin: auto"></a>
+		<a href="https://gitlab.com/S4NDW1CH_" target="_blank"><img src={gitlab_logo} alt="My GitLab profile"></a>
 	</div>
 </section>
 
@@ -149,9 +149,5 @@
 		to {
 			rotate: 360deg;
 		}
-	}
-
-	:global(body) {
-		background-color: transparent;
 	}
 </style>
