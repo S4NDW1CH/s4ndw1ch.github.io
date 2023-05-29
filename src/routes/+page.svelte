@@ -2,8 +2,8 @@
 	import github_logo from "$lib/images/github-mark-white.svg"
 	import gitlab_logo from "$lib/images/gitlab-logo-500.svg"
 
-	import sandwich from "$lib/images/sandwich.png"
-	import bg_img from "$lib/images/space_scroll.png"
+	import sandwich from "$lib/images/sandwich.webp"
+	import bg_img from "$lib/images/space_scroll.webp"
 
 	import { onMount } from "svelte";
 
