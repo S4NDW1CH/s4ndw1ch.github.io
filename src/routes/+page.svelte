@@ -20,7 +20,7 @@
 			let m_y = event.clientY / vh;
 			let m_x = event.clientX / vw;
 
-			bg?.setAttribute("style", `background-image: url("${bg_img}"); background-position-y: ${easeInOutSine(m_y)*100}%; --offset: ${100 + (easeInOutSine(m_x) - .5)*2*70}vw`);
+			bg?.setAttribute("style", `background-image: url("${bg_img}"); background-position-y: ${easeInOutSine(m_y)*40}%; --offset: -${100 + (easeInOutSine(m_x) - .5)*2*5}vw`);
 		});
 	});
 
@@ -128,11 +128,11 @@
 
 	@keyframes bg-slide {
 		from {
-			background-position-x: left;
+			background-position-x: left var(--offset);
 		}
 
 		to {
-			background-position-x: right var(--offset);
+			background-position-x: right calc(100vh + var(--offset));
 		}
 	}
 
